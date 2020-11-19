@@ -1,12 +1,12 @@
 {
   "name": "site",
-  "version": "0.0.0-15",
+  "version": "0.0.0-6a7ffe8",
   "license": "MIT",
   "dependencies": {
-    "@code-hike/mini-browser": "0.0.0-15",
-    "@code-hike/mini-editor": "0.0.0-15",
-    "@code-hike/mini-terminal": "0.0.0-15",
-    "@code-hike/scroller": "0.0.0-15",
+    "@code-hike/mini-browser": "0.0.0-6a7ffe8",
+    "@code-hike/mini-editor": "0.0.0-6a7ffe8",
+    "@code-hike/mini-terminal": "0.0.0-6a7ffe8",
+    "@code-hike/scroller": "0.0.0-6a7ffe8",
     "next": "^10.0.1",
     "rc-tooltip": "^5.0.0",
     "react": "^16.13.1",
