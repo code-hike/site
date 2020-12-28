@@ -14,15 +14,19 @@ export function Description() {
           overlay={
             <div className={s.experimental}>
               <span className={s.label}>
-                September 2020 status:
+                December 2020 status:
               </span>{" "}
               <p>
                 <a href="https://www.npmjs.com/org/code-hike">
                   Experimental versions on NPM
                 </a>
-                . Still very unstable, very undocumented,
-                very buggy, and not very fast. Codesandbox
-                examples coming soon for early adopters.
+                . Still very unstable, very undocumented, and very buggy.
+                Codesandbox examples coming soon. Work is happening on the
+                <a href="https://www.npmjs.com/org/code-hike">v0.3 branch</a>.
+                Currently working on a{" "}
+                <a href="https://www.npmjs.com/package/@code-hike/scrollycoding">
+                  new high-level package
+                </a>
               </p>
             </div>
           }
