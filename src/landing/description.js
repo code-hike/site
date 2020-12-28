@@ -21,7 +21,7 @@ export function Description() {
                   Experimental versions on NPM
                 </a>
                 . Still very unstable, very undocumented, and very buggy.
-                Codesandbox examples coming soon. Work is happening on the
+                Codesandbox examples coming soon. Work is happening on the{" "}
                 <a href="https://github.com/code-hike/codehike/tree/v0.3">v0.3 branch</a>.
                 Currently working on a{" "}
                 <a href="https://www.npmjs.com/package/@code-hike/scrollycoding">
