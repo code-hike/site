@@ -1,13 +1,13 @@
-export { fetchSponsors }
+export { fetchSponsors };
 
 async function fetchSponsors() {
-  const githubUrl = "https://api.github.com/graphql"
-  const token = process.env.GITHUB_TOKEN
-  const oauth = { Authorization: "bearer " + token }
+  const githubUrl = "https://api.github.com/graphql";
+  const token = process.env.GITHUB_TOKEN;
+  const oauth = { Authorization: "bearer " + token };
 
   if (!token) {
-    console.log("Missing process.env.GITHUB_TOKEN")
-    return []
+    console.log("Missing process.env.GITHUB_TOKEN");
+    return [];
   }
 
   return await fetch(githubUrl, {
@@ -16,20 +16,21 @@ async function fetchSponsors() {
     headers: oauth,
   })
     .then(function (response) {
-      return response.json()
+      return response.json();
     })
     .then(({ data, errors }) => {
       if (errors) {
-        console.error(JSON.stringify(errors))
-        return
+        console.error(JSON.stringify(errors));
+        return;
       }
-      return data.organization.sponsorshipsAsMaintainer.nodes.map(
-        node => node.sponsorEntity
-      )
+      const ghSponsors = data.organization.sponsorshipsAsMaintainer.nodes.map(
+        (node) => node.sponsorEntity
+      );
+      return [...ghSponsors, ...otherSponsors];
     })
-    .catch(error => {
-      console.error("Error fetching sponsors", error)
-    })
+    .catch((error) => {
+      console.error("Error fetching sponsors", error);
+    });
 }
 
 const query = `
@@ -57,5 +58,14 @@ const query = `
     }
   }
 }
+`;
 
-`
+const otherSponsors = [
+  {
+    name: "Matthias Zepper",
+    login: "SenoOtway",
+    avatarUrl: "https://avatars.githubusercontent.com/u/6963520?s=128&v=4",
+    location: "Germany",
+    url: "https://github.com/senootway",
+  },
+];
