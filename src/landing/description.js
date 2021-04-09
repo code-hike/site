@@ -34,17 +34,14 @@ export function Description() {
 function ExperimentalNote() {
   return (
     <div className={s.experimental}>
-      <span className={s.label}>February 2021 status:</span>{" "}
+      <span className={s.label}>April 2021 status:</span>{" "}
       <p>
         <a href="https://www.npmjs.com/org/code-hike">
           Experimental versions on NPM
         </a>
-        . Still unstable, undocumented, and buggy. Codesandbox examples coming
-        soon. Work is happening on the{" "}
-        <a href="https://github.com/code-hike/codehike/tree/v0.3">
-          v0.3 branch
-        </a>
-        . Currently working on a{" "}
+        . Still unstable and undocumented. More codesandbox examples coming
+        soon.
+        Currently working on a{" "}
         <a href="https://www.npmjs.com/package/@code-hike/scrollycoding">
           new high-level package
         </a>
