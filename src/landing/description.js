@@ -41,7 +41,7 @@ function ExperimentalNote() {
         </a>
         . Still unstable and undocumented. More codesandbox examples coming
         soon.
-        . Currently working on a{" "}
+        Currently working on a{" "}
         <a href="https://www.npmjs.com/package/@code-hike/scrollycoding">
           new high-level package
         </a>
