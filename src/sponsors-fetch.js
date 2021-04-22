@@ -68,4 +68,11 @@ const otherSponsors = [
     location: "Germany",
     url: "https://github.com/senootway",
   },
+  {
+    name: "Fran Méndez",
+    login: "fmvilas",
+    avatarUrl: "https://avatars.githubusercontent.com/u/242119?s=128&v=4",
+    location: "Spain",
+    url: "https://github.com/fmvilas",
+  },
 ];
