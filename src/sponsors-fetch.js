@@ -75,4 +75,11 @@ const otherSponsors = [
     location: "Spain",
     url: "https://github.com/fmvilas",
   },
+  {
+    name: "Facebook Open Source",
+    login: "facebook",
+    avatarUrl: "https://images.opencollective.com/fbopensource/fbb8a5b/logo/256.png",
+    location: "Menlo Park, California",
+    url: "https://github.com/facebook",
+  },
 ];
