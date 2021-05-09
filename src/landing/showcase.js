@@ -8,6 +8,7 @@ function Showcase() {
   return (
     <section className={s.showcase}>
       <Carousel>
+        <BlogDemo />
         <TalkDemo />
         <MiniDocsDemo />
         <TutorialDemo />
@@ -16,11 +17,25 @@ function Showcase() {
   )
 }
 
+function BlogDemo() {
+  return (
+    <a
+      className={s.demo}
+      href="https://code-hike-scrollycoding-preview.vercel.app/posts/lorem-ipsum-three"
+    >
+      <Browser>
+        <img src="blog-cover.png" />
+      </Browser>
+      <h3>A Blog Post</h3>
+    </a>
+  )
+}
+
 function TalkDemo() {
   return (
     <a
       className={s.demo}
-      href="https://egghead.io/lessons/mdx-the-x-in-mdx"
+      href="https://www.youtube.com/watch?v=xEu3t-KJVVg"
     >
       <Browser>
         <img src="talk-cover.png" />
