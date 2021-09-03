@@ -63,10 +63,10 @@ const query = `
 const otherSponsors = [
   {
     name: "Matthias Zepper",
-    login: "SenoOtway",
+    login: "MatthiasZepper",
     avatarUrl: "https://avatars.githubusercontent.com/u/6963520?s=128&v=4",
     location: "Germany",
-    url: "https://github.com/senootway",
+    url: "https://github.com/matthiaszepper",
   },
   {
     name: "Fran Méndez",
